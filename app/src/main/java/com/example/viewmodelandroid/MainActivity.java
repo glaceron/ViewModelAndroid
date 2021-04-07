@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         viewModel = new ViewModelProvider(this).get(MainActivityViewModel.class);
 
-        binding.textView.setText(String.valueOf(viewModel.numero));
+        binding.textView.setText(String.valueOf(viewModel.getNumero()));
     }
     @Override
     public void onClick(View v)
